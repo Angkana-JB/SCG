@@ -1,15 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <GoogleMap />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import GoogleMap from './components/GoogleMap.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    GoogleMap
   }
 }
 </script>
@@ -23,4 +24,17 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+.pac-target-input {
+  padding: 10px;
+  width: 20%;
+}
+
+.btn {
+  margin-left: 20px;
+  padding: 10px 20px;
+  background-color: greenyellow;
+}
 </style>
+
+
